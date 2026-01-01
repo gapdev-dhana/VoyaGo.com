@@ -1,0 +1,32 @@
+body{
+    background-color: #E9F2FF;
+    padding: 40px;
+    overflow: hidden;
+    overflow-y:scroll ;
+}
+
+.form-group{
+    margin-bottom:30px;
+}
+.img1{
+    width: 100%;
+}
+
+.log1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    height: 50%;
+    margin: auto;
+}
+.xbtn{
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.15s color;
+}
+.xbtn:hover{
+    color: rgba(0, 0, 0, 1);
+}

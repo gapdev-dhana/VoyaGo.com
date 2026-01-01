@@ -1,0 +1,231 @@
+:root{
+    --teal:#2ec1ac;
+    --teal_hover:#279e8c;
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.custom-bg{
+    background-color:var(--teal);
+    border: 1px solid var(--teal);
+}
+.custom-bg:hover{
+    background-color:var(--teal_hover);
+    border-color:var(--teal_hover) ;
+}
+
+.h-line{
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+.cont_bg{
+    background-color: var(--teal);
+}
+
+/*----Scroll Top Button----*/
+
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    color: var(--contrast-color);
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+    color: var(--contrast-color);
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
+.videocart{
+    margin-top: 110px;
+}
+
+.vdo{
+    right: 0; 
+    bottom: 0; 
+    z-index: -1; 
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.head_title{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: -80px;
+    border: none;
+}
+
+.head_title1{
+    color: white; 
+    font-size: 50px;
+    font-family: "Merienda", cursive;
+    -webkit-text-stroke: 3px #008374; 
+}
+
+.head_title2{
+    color: white; 
+    font-size: 20px;
+    width: 800px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-family: "Merienda", cursive;
+    
+}
+
+.get_start_button{
+    border-radius: 25px; 
+    color: white; 
+    border-color: white;
+    transition: 0.15s border;
+    font-family: "Merienda", cursive;
+}
+
+.watch_video1{
+    font-family: "Merienda", cursive;
+}
+
+.get_start_button:hover{
+    border: none;
+}
+
+.watch_button{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    transition: 0.15s color;
+}
+
+.watch_button:hover{
+    color:rgba(255, 255, 255, 1) ;
+}
+
+@media (max-width: 1200px) {
+    .videocart{
+        margin-top: 100px;
+    }
+    .vdo{
+        height: 350px;
+    }
+    .head_title1{
+        font-size: 30px;
+    }
+    .head_title{
+        margin-top: -170px;
+    }
+    .head_title2{
+        font-size: 15px;
+    }
+}
+@media(max-width: 850px) {
+    .head_tit{
+        width: 90%;
+    }
+    .head_title2{
+        width: 100%;
+    }
+}
+
+.hero .icon-boxes {
+    z-index: 4;
+    margin-top: -100px;
+}
+
+.hero .icon-box {
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #008374;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.hero .icon-box .title a {
+    color: color-mix(in srgb, #ffffff, transparent 20%);
+    transition: 0.3s;
+}
+
+.hero .icon-box .icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 48px;
+    line-height: 1;
+    color: color-mix(in srgb, #ffffff, transparent 20%);
+}
+
+.hero .icon-box:hover {
+    background-color: color-mix(in srgb, #008374, white 20%);
+}
+
+.hero .icon-box:hover .title a,
+.hero .icon-box:hover .icon {
+    color: #ffffff;
+}
+.button_2{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 570px) {
+    .hero .icon-boxes {
+        margin-top: 0px;
+    }
+    .button_2{
+        display: none;
+    }
+    .head_title{
+        margin-top: -135px;
+    }
+}
+
+
+
+
